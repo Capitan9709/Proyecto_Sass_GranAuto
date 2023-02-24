@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/b796c7785a.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../img/icono.png">
+    <title>Granauto</title>
+</head>
+<body class="bg-dark">
+    <!-- Header -->
+  <header class="p-3 bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="../index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img src="../img/logo_escalado.png" alt="Logo Granauto">
+        </a>
+        
+        <nav class="navegacion-header nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <ul class="navegacion-header-lista nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="../index.html" class="navegacion-header-lista-link nav-link px-2 text-white">Inicio</a></li>
+              <li><a href="" class="navegacion-header-lista-link nav-link px-2 text-secondary disabled">Venta</a></li>
+              <li><a href="./alquiler.html" class="navegacion-header-lista-link nav-link px-2 text-white">Alquiler</a></li>
+              <li><a href="./contacto.html" class="navegacion-header-lista-link nav-link px-2 text-white">Contacto</a></li>
+            </ul>
+          </nav>
+          
+          <ul class="iconos-header nav col-12 col-lg-auto pe-5 mb-3 mb-lg-0 me-lg-3 d-flex text-light">
+            <li><a target="_blank" href="https://twitter.com/" class="iconos-header-icono nav-link mx-2 px-2 text-white"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/" class="iconos-header-icono nav-link mx-2 px-2 text-white"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://es-es.facebook.com/" class="iconos-header-icono nav-link mx-2 px-2 text-white"><i class="fa-brands fa-facebook"></i></a></li>
+          </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Buscar..." aria-label="Search">
+        </form>
+
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main class="bg-dark">
+        <div class="text-bg-dark py-3 ps-5">
+          <h2>Nuestros Coches en Venta</h2>
+        </div>
+        <!-- catalogo venta -->
+        <div class="d-flex">
+          <!-- filtros -->
+          <div class="aside col-3 bg-secondary rounded pb-2 px-2">
+            <h3>Filtros</h3>
+            <!-- selector marca -->
+            <div class="form-floating mb-3">
+              <select class="form-select border-dark bg-secondary" id="cars" aria-label="Floating label select example">
+              <option selected>Selecciona una marca</option>
+              <option value="audi">Audi</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="bmw">BMW</option>
+              <option value="seat">Seat</option>
+              </select>
+              <label for="cars">Marca:</label>
+            </div>
+            <!-- selector modelo -->
+            <div class="form-floating mb-3">
+              <select class="form-select border-dark bg-secondary" id="model" aria-label="Floating label select example">
+              <option selected>Selecciona un modelo</option>
+              <option value="a4">A4</option>
+              <option value="a5">A5</option>
+              <option value="300e">300E</option>
+              <option value="190e">190E</option>
+              <option value="e30">E30</option>
+              <option value="e39">E39</option>
+              <option value="leon">Leon</option>
+              <option value="ibiza">Ibiza</option>
+              </select>
+              <label for="model">Marca:</label>
+            </div>
+            <!-- selector precio -->
+            <div class="input-group mb-3">
+              <span class="input-group-text border-dark text-bg-dark">Precio</span>
+              <div class="form-floating">
+                <input type="number" class="form-control border-dark bg-secondary" id="floatingInputGroup1" placeholder="Username">
+                <label for="floatingInputGroup1">Precio-minimo</label>
+              </div>
+              <div class="form-floating">
+                <input type="number" class="form-control border-dark bg-secondary" id="floatingInputGroup1" placeholder="Username">
+                <label for="floatingInputGroup1">Precio-maximo</label>
+              </div>
+            </div>
+            <!-- selector km -->
+            <div class="input-group mb-3">
+              <span class="input-group-text border-dark text-bg-dark">Kilometraje</span>
+              <div class="form-floating">
+                <input type="number" class="form-control border-dark bg-secondary" id="floatingInputGroup1" placeholder="Username">
+                <label for="floatingInputGroup1">Km-minimo</label>
+              </div>
+              <div class="form-floating">
+                <input type="number" class="form-control border-dark bg-secondary" id="floatingInputGroup1" placeholder="Username">
+                <label for="floatingInputGroup1">Km-maximo</label>
+              </div>
+            </div>
+            <!-- selector año -->
+            <div class="input-group mb-3">
+              <span class="input-group-text border-dark text-bg-dark">Año</span>
+              <div class="form-floating">
+                <input type="number" class="form-control border-dark bg-secondary" id="floatingInputGroup1" placeholder="Username">
+                <label for="floatingInputGroup1">Año-minimo</label>
+              </div>
+              <div class="form-floating">
+                <input type="number" class="form-control border-dark bg-secondary" id="floatingInputGroup1" placeholder="Username">
+                <label for="floatingInputGroup1">Año-maximo</label>
+              </div>
+            </div>
+            <!-- selector combustible -->
+            <div class="form-floating mb-3">
+              <select class="form-select border-dark bg-secondary" id="model" aria-label="Floating label select example">
+              <option selected>Selecciona un tipo de combustible</option>
+              <option value="diesel">Diesel</option>
+              <option value="gasolina">Gasolina</option>
+              </select>
+              <label for="model">Combustible:</label>
+            </div>
+            <!-- selector cambio -->
+            <div class="form-floating mb-3">
+              <select class="form-select border-dark bg-secondary" id="model" aria-label="Floating label select example">
+              <option selected>Selecciona un tipo de cambio</option>
+              <option value="manual">Manual</option>
+              <option value="automatico">Automatico</option>
+              </select>
+              <label for="model">Cambio:</label>
+            </div>
+            <!-- selector potencia -->
+            <div class="input-group mb-3">
+              <span class="input-group-text border-dark text-bg-dark">Potencia</span>
+              <div class="form-floating">
+                <input type="number" class="form-control border-dark bg-secondary" id="floatingInputGroup1" placeholder="Username">
+                <label for="floatingInputGroup1">Potencia-minimo</label>
+              </div>
+              <div class="form-floating">
+                <input type="number" class="form-control border-dark bg-secondary" id="floatingInputGroup1" placeholder="Username">
+                <label for="floatingInputGroup1">Potencia-maximo</label>
+              </div>
+            </div>
+            <!-- selector plazas -->
+            <div class="input-group mb-3">
+              <span class="input-group-text border-dark text-bg-dark">Plazas</span>
+              <div class="form-floating">
+                <input type="number" class="form-control border-dark bg-secondary" id="floatingInputGroup1" placeholder="Username">
+                <label for="floatingInputGroup1">Plazas-minimo</label>
+              </div>
+              <div class="form-floating">
+                <input type="number" class="form-control border-dark bg-secondary" id="floatingInputGroup1" placeholder="Username">
+                <label for="floatingInputGroup1">Plazas-maximo</label>
+              </div>
+            </div>
+            <!-- selector carroceria -->
+            <div class="form-floating mb-3">
+              <select class="form-select border-dark bg-secondary" id="cars" aria-label="Floating label select example">
+              <option selected>Selecciona una carroceria</option>
+              <option value="berlina">Berlina</option>
+              <option value="familiar">Familiar</option>
+              <option value="coupe">Coupe</option>
+              <option value="monovolumen">Monovolumen</option>
+              <option value="4x4">4x4</option>
+              <option value="cabrio">Cabrio</option>
+              <option value="pickup">Pick Up</option>
+              <option value="suv">SUV</option>
+              </select>
+              <label for="cars">Carroceria:</label>
+            </div>
+            <!-- Aplicar filtro -->
+            <div class="form-floating submit mb-3">
+              <input class="btn btn-dark col-5" type="submit" value="Aplicar">
+            </div>
+          </div>
+          <!-- catalogo -->
+          <div class="catologo ms-3 col-8 d-flex flex-wrap">
+
+            <div class="card bg-secondary border-dark mb-3 ms-4" style="height: 13rem;">
+              <a class="card-link" href="./bmw_34_venta.html">
+                <img src="../img/bmw-e34-1.jpeg" class="card-img-top" alt="bmw e34">
+                <div class="card-body">
+                  <p class="card-text">BMW E34</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="card bg-secondary border-dark mb-3 ms-4" style="height: 13rem;">
+              <a class="card-link" href="./bmw_34_venta.html">
+                <img src="../img/mercedes-clasico-1.jpeg" class="card-img-top" alt="mercedes clasico">
+                <div class="card-body">
+                  <p class="card-text">Mercedes</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="card bg-secondary border-dark mb-3 ms-4" style="height: 13rem;">
+              <a class="card-link disabled" href="">
+                <img src="../img/mustang-1.jpeg" class="card-img-top" alt="ford mustang">
+                <div class="card-body">
+                  <p class="card-text">Ford Mustang</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="card bg-secondary border-dark mb-3 ms-4" style="height: 13rem;">
+              <a class="card-link" href="./bmw_34_venta.html">
+                <img src="../img/porsche-911-1.jpeg" class="card-img-top" alt="porsche 911">
+                <div class="card-body">
+                  <p class="card-text">Porsche 911</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="card bg-secondary border-dark mb-3 ms-4" style="height: 13rem;">
+              <a class="card-link disabled" href="">
+                <img src="../img/cadillac-1.jpeg" class="card-img-top" alt="cadillac">
+                <div class="card-body">
+                  <p class="card-text">Cadillac</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="card bg-secondary border-dark mb-3 ms-4" style="height: 13rem;">
+              <a class="card-link disabled" href="">
+                <img src="../img/jaguar-xj-1.jpeg" class="card-img-top" alt="jaguar xj">
+                <div class="card-body">
+                  <p class="card-text">Jaguar XJ</p>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+    </main>
+    <!-- Footer -->
+  <footer class="px-5 py-5 bg-dark">
+    <div class="row text-light">
+      <div class="col-6 col-md-3 mb-3">
+        <h5>Sobre GranAuto</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="./nosotros.html" class="nav-link p-0 text-muted">Sobre Nosotros</a></li>
+          <li class="nav-item mb-2"><a href="./contacto.html" class="nav-link p-0 text-muted">Contacto y Sugerencias</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Aviso legal</a></li>
+          <li class="nav-item mb-2"><a href="./privacidad.html" class="nav-link p-0 text-muted">Politica de privacidad</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Politica de cookies</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-3 mb-3">
+        <h5>Comprar</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted disabled">Coches clasicos</a></li>
+          <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted disabled">Coches con Km 0</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Actualidad sobre coches</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Subscribete a nuestro boletín</h5>
+          <p>Actualización mensual de los mas nuevo.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Direccion de correo</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Direccion de correo">
+            <button class="btn btn-secondary" type="button">Subscribirse</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top text-light">
+      <p>© 2023 GranAuto, Todos los derechos reservados.</p>
+      <ul class="iconos-footer list-unstyled d-flex">
+        <li class="ms-3"><a class="link-light" target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter iconos-footer-icono"></i></a></li>
+        <li class="ms-3"><a class="link-light" target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram iconos-footer-icono"></i></a></li>
+        <li class="ms-3"><a class="link-light" target="_blank" href="https://es-es.facebook.com/"><i class="fa-brands fa-facebook iconos-footer-icono"></i></a></li>
+        <li class="ms-5"><a class="link-light" href="#"><i class="fa-solid fa-circle-up fa-2x iconos-footer-flecha"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

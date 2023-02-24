@@ -1,0 +1,25 @@
+.navegacion-header{
+    font-family: $font-family-secondary;
+    &-lista{
+        &-link{
+            color: color(tertiary) !important;
+            transition: 0.3s;
+        }
+        &-link:hover{
+            color: color(secondary) !important;
+            transition: 0.3s;
+        }
+    }
+}
+.iconos-header{
+    &-icono{
+        color: color(tertiary) !important;
+        scale: 1;
+        transition: 0.3s;
+    }
+    &-icono:hover{
+        color: color(quaternary) !important;
+        scale: 1.5;
+        transition: 0.3s;
+    }
+}

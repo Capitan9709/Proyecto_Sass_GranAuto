@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/b796c7785a.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./img/icono.png">
+    <title>GranAuto</title>
+</head>
+<body class="bg-dark">
+  <!-- Header -->
+  <header class="p-3 bg-dark">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="./img/logo_escalado.png" alt="Logo Granauto">
+          </a>
+          
+          <nav class="navegacion-header nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <ul class="navegacion-header-lista nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="" class="navegacion-header-lista-link nav-link px-2 text-secondary disabled">Inicio</a></li>
+              <li><a href="./paginas/venta.html" class="navegacion-header-lista-link nav-link px-2 text-white">Venta</a></li>
+              <li><a href="./paginas/alquiler.html" class="navegacion-header-lista-link nav-link px-2 text-white">Alquiler</a></li>
+              <li><a href="./paginas/contacto.html" class="navegacion-header-lista-link nav-link px-2 text-white">Contacto</a></li>
+            </ul>
+          </nav>
+          
+          <ul class="iconos-header nav col-12 col-lg-auto pe-5 mb-3 mb-lg-0 me-lg-3 d-flex text-light">
+            <li><a target="_blank" href="https://twitter.com/" class="iconos-header-icono nav-link mx-2 px-2 text-white"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/" class="iconos-header-icono nav-link mx-2 px-2 text-white"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://es-es.facebook.com/" class="iconos-header-icono nav-link mx-2 px-2 text-white"><i class="fa-brands fa-facebook"></i></a></li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Buscar..." aria-label="Search">
+          </form>
+  
+        </div>
+      </div>
+  </header>
+<!-- Main -->
+  <main class="bg-dark">
+    <div class="text-bg-dark py-3 ps-5">
+      <h2>El Mejor Precio Garantizado</h2>
+    </div>
+<!-- Selector de coches en venta o alquiler -->
+    <div class="d-md-flex flex-md-equal w-100 ">
+      <div class="text-bg-dark w-100 md-w-50 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5 d-flex flex-row">Coches en Venta</h2>
+          <p class="lead">Todos los coches que disponemos actualmente a la venta.</p>
+        </div>
+        <div class="shadow-sm mx-auto" style="width: 80%; height: 280px; border-radius: 21px 21px 0 0;">
+          <a href="./paginas/venta.html"><img class="rounded" src="./img/bmw-e34-1.jpeg" alt="Imagen de un bmw como portada para los coches en venta" style="width: 100%;"></a>
+        </div>
+      </div>
+      <div class="text-bg-dark w-100 md-w-50 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5 d-flex flex-row-reverse">Coches en Alquiler</h2>
+          <p class="lead">Todos los coches que disponemos actualmente en alquiler.</p>
+        </div>
+        <div class="shadow-sm mx-auto" style="width: 80%; height: 280px; border-radius: 21px 21px 0 0;">
+          <a href="./paginas/alquiler.html"><img class="rounded" src="./img/mercedes-clasico-1.jpeg" alt="Imagen de un mercedes como portada para los coches en alquiler" style="width: 100%;"></a>
+        </div>
+      </div>
+    </div>
+<!-- personal empresa -->
+    <div class="row text-bg-dark g-0 border rounded overflow-hidden flex-md-row mx-4 my-4 shadow-sm h-md-250 position-relative">
+      <div class="col-auto d-none d-lg-block">
+        <img src="./img/equipo.jpg" alt="Imagen del quipo de empresa" style="width: 100%; height: 280px;">
+      </div>
+      <div class="col p-4 mt-5 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-secondary">GranAuto</strong>
+        <h3 class="mb-0">Nuestro Personal</h3>
+        <p class="card-text mb-auto">El personale de nuestra empresa que se encargara de que tu experiencia a la hora de comprar o alquilar sea la mejor posible.</p>
+      </div>
+    </div>
+<!-- ventajas de la empresa -->
+    <div class="row text-bg-dark g-0 border rounded overflow-hidden flex-md-row mx-4 my-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 mt-5 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-secondary">GranAuto</strong>
+        <h3 class="mb-0">Ventajas de COMPRAR con nosotros</h3>
+        <div class="d-grid col-4 mx-auto">
+          <a class="nav-link p-0 text-white" href="./paginas/venta.html"><button class="btn btn-outline-secondary text-bg-secondary mt-3">Comprar Ahora</button></a>
+        </div>
+      </div>
+      <div class="col-6 d-lg-block me-4">
+          <table class="table text-bg-dark">
+          <thead>
+            <tr>
+              <th scope="col">Ventajas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mejor precio garantizado</td>
+            </tr>
+            <tr>
+              <td>Garantia de 1 año</td>
+            </tr>
+            <tr>
+              <td>Financiacion a tu medida</td>
+            </tr>
+            <tr>
+              <td>Envio a domicilio</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+<!-- Footer -->
+  <footer class="px-5 py-5 bg-dark">
+    <div class="row text-light">
+      <div class="col-6 col-md-3 mb-3">
+        <h5>Sobre GranAuto</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="./paginas/nosotros.html" class="nav-link p-0 text-muted">Sobre Nosotros</a></li>
+          <li class="nav-item mb-2"><a href="./paginas/contacto.html" class="nav-link p-0 text-muted">Contacto y Sugerencias</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Aviso legal</a></li>
+          <li class="nav-item mb-2"><a href="./paginas/privacidad.html" class="nav-link p-0 text-muted">Politica de privacidad</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Politica de cookies</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-3 mb-3">
+        <h5>Comprar</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="./paginas/venta.html" class="nav-link p-0 text-muted">Coches clasicos</a></li>
+          <li class="nav-item mb-2"><a href="./paginas/venta.html" class="nav-link p-0 text-muted">Coches con Km 0</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Actualidad sobre coches</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Subscribete a nuestro boletín</h5>
+          <p>Actualización mensual de los mas nuevo.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Direccion de correo</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Direccion de correo">
+            <button class="btn btn-secondary" type="button">Subscribirse</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top text-light">
+      <p>© 2023 GranAuto, Todos los derechos reservados.</p>
+      <ul class="iconos-footer list-unstyled d-flex">
+        <li class="ms-3"><a class="link-light" target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter iconos-footer-icono"></i></a></li>
+        <li class="ms-3"><a class="link-light" target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram iconos-footer-icono"></i></a></li>
+        <li class="ms-3"><a class="link-light" target="_blank" href="https://es-es.facebook.com/"><i class="fa-brands fa-facebook iconos-footer-icono"></i></a></li>
+        <li class="ms-5"><a class="link-light" href="#"><i class="fa-solid fa-circle-up fa-2x iconos-footer-flecha"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

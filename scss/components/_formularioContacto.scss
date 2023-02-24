@@ -1,0 +1,9 @@
+/// componente: formulario de contacto
+.formulario-contacto{
+    &-correo:invalid{
+        border: 1px solid red !important;
+    }
+    &-texto{
+        height: 10rem !important;
+    }
+}

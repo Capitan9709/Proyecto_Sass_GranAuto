@@ -1,0 +1,98 @@
+// hacer responsivo
+/// mixin de responsive
+/// 
+@mixin responsive($breakpoint) {
+    @if $breakpoint == xl {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == lg {
+        @media (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == md {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == sm {
+        @media (max-width: 576px) {
+            @content;
+        }
+    }
+    
+}
+// posicionar con flex
+/// mixin de posicionamiento con flex
+/// @example
+/// .footer{
+///    @include flex(row, center, center);
+/// }
+/// @param {string} $direction [row] -- valor de direccion de flex
+/// @param {string} $justify [center] -- valor de justificacion de flex
+/// @param {string} $align [center] -- valor de alineacion de flex
+/// 
+
+@mixin flex($direction: row, $justify: center, $align: center){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+/// Mixin que coloca los elementos del nav en la misma linea
+/// @example
+/// .nav{
+///    @include navigation();
+/// }
+/// 
+@mixin navigation(){
+    &-list{
+        @include flex();
+        height: 100%;
+    }
+    &-item{
+        list-style-type: none;
+    }
+    &-link{
+        text-decoration: none;
+        color: color(primary);
+        font-size: font-size(xs);
+        transition: all .5s;
+        &:hover{
+            color: lighten(color(quaternary), 10%);
+        }
+    }
+}
+
+// crear color aleatorio
+/// mixin de randomizador de colores
+/// 
+@mixin randomBG(){
+    background-color: rgb(random(255), random(255), random(255));
+}
+
+
+/// prerparar elemento para que el texto para que se muestre en el hover
+/// 
+%placeholder{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+
+    background-color: color(primary);
+    opacity: 0.8;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: all 0.3s;
+    text-align: center;
+    cursor: pointer;
+    @include flex();
+}

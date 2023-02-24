@@ -1,0 +1,18 @@
+/// layout: card
+.card{
+    width: 18rem;
+    &-link{
+        text-decoration: none;
+        color: color(fondo);
+    }
+    &-link:hover{
+        color: color(quaternary);
+        text-decoration: underline;
+    }
+    &-link:disabled{
+        color: color(tertiary);
+        text-decoration: none;
+        cursor: default;
+    }
+
+}

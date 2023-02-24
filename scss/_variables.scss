@@ -1,0 +1,77 @@
+//// Proyecto: Ejemlpo SassDoc
+/// @author: Luis Moya
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+// paleta colores
+/// mapa de colores
+/// @group colores
+$colors: (
+    primary: #333,
+    secondary: #f8f9fa,
+
+    tertiary: #f2f0f1,
+
+    quaternary: #495057,
+    fondo:#212529
+);
+
+/// Funcion que devuelve un color del vector colores
+/// @group colores
+/// @param {string} $color-name - nombre del color del vector de colores
+/// @return {color} - color en hexadecimal
+@function color ($color-name){
+    @return map-get($colors, $color-name);
+}
+
+// tamaños fuente
+/// mapa de tamaños
+/// @group tamaños
+$font-sizes: (
+    xxl: 6rem,
+    xl: 3rem,
+    lg: 2.5rem,
+    md: 2rem,
+    sm: 1.8rem,
+    xs: 1.6rem
+);
+
+/// Funcion que devuelve tamaño fuente
+/// @group tamaños
+/// @param {string} $size - nombre del tamaño del vector de tamaños
+/// @return {size} - tamaño en rem
+@function font-size ($size){
+    @return map-get($font-sizes, $size);
+}
+
+// pesos fuente
+/// mapa de pesos
+/// @group pesos
+$font-weights: (
+    light: 300,
+    regular: 400,
+    bold: 700
+);
+
+/// Funcion que devuelve peso fuente
+/// @group pesos
+/// @param {string} $weight - nombre del peso del vector de pesos
+/// @return {weight} - peso en rem
+@function font-weight ($weight){
+    @return map-get($font-weights, $weight);
+}
+
+// fuente
+///
+$font-family-primary:  'Roboto Mono', monospace;
+$font-family-secondary: 'Tilt Neon', cursive;
+
+$max-width: 1400px;
+$default-margin: 0;
+$default-padding: 0;
+$separator-margin: 0.5rem 0 0 0;
+
+// nav-links variables
+///
+$nav-link-color: black;
+$nav-link-hover-color: red;

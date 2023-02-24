@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/b796c7785a.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../img/icono.png">
+    <title>Granauto</title>
+</head>
+<body class="bg-dark">
+    <!-- Header -->
+  <header class="p-3 bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="../index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img src="../img/logo_escalado.png" alt="Logo Granauto">
+        </a>
+        
+        <nav class="navegacion-header nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <ul class="navegacion-header-lista nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="../index.html" class="navegacion-header-lista-link nav-link px-2 text-white">Inicio</a></li>
+            <li><a href="./venta.html" class="navegacion-header-lista-link nav-link px-2 text-white">Venta</a></li>
+            <li><a href="./alquiler.html" class="navegacion-header-lista-link nav-link px-2 text-white">Alquiler</a></li>
+            <li><a href="" class="navegacion-header-lista-link nav-link px-2 text-secondary disabled">Contacto</a></li>
+          </ul>
+        </nav>
+        
+        <ul class="iconos-header nav col-12 col-lg-auto pe-5 mb-3 mb-lg-0 me-lg-3 d-flex text-light">
+          <li><a target="_blank" href="https://twitter.com/" class="iconos-header-icono nav-link mx-2 px-2 text-white"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a target="_blank" href="https://www.instagram.com/" class="iconos-header-icono nav-link mx-2 px-2 text-white"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a target="_blank" href="https://es-es.facebook.com/" class="iconos-header-icono nav-link mx-2 px-2 text-white"><i class="fa-brands fa-facebook"></i></a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Buscar..." aria-label="Search">
+        </form>
+
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main class="bg-dark">
+        <div class="text-bg-dark py-3 ps-5">
+            <h2>Contacta con Nosotros</h2>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <form class="d-flex flex-column justify-content-center col-6" action="">
+            <div class="form-floating email mb-3 formulario-contacto">
+              <input type="email" class="form-control formulario-contacto-correo" id="floatingInput" placeholder="name@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+              <label for="floatingInput">Correo electronico</label>
+            </div>
+            <div class="form-floating textarea mb-3">
+              <textarea class="form-control formulario-contacto-texto" placeholder="Deja un comentario aqui" id="floatingTextarea" required></textarea>
+              <label for="floatingTextarea">Escribe algo...</label>
+            </div>
+            <div class="d-flex justify-content-center form-floating submit mb-3">
+              <input class="btn btn-secondary col-2" type="submit" value="Enviar">
+            </div>
+          </form>
+        </div>
+        
+    </main>
+    <!-- Footer -->
+  <footer class="px-5 py-5 bg-dark">
+    <div class="row text-light">
+      <div class="col-6 col-md-3 mb-3">
+        <h5>Sobre GranAuto</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="./nosotros.html" class="nav-link p-0 text-muted">Sobre Nosotros</a></li>
+          <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted disabled">Contacto y Sugerencias</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Aviso legal</a></li>
+          <li class="nav-item mb-2"><a href="./privacidad.html" class="nav-link p-0 text-muted">Politica de privacidad</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Politica de cookies</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-3 mb-3">
+        <h5>Comprar</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="./venta.html" class="nav-link p-0 text-muted">Coches clasicos</a></li>
+          <li class="nav-item mb-2"><a href="./venta.html" class="nav-link p-0 text-muted">Coches con Km 0</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Actualidad sobre coches</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Subscribete a nuestro boletín</h5>
+          <p>Actualización mensual de los mas nuevo.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Direccion de correo</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Direccion de correo">
+            <button class="btn btn-secondary" type="button">Subscribirse</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top text-light">
+      <p>© 2023 GranAuto, Todos los derechos reservados.</p>
+      <ul class="iconos-footer list-unstyled d-flex">
+        <li class="ms-3"><a class="link-light" target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter iconos-footer-icono"></i></a></li>
+        <li class="ms-3"><a class="link-light" target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram iconos-footer-icono"></i></a></li>
+        <li class="ms-3"><a class="link-light" target="_blank" href="https://es-es.facebook.com/"><i class="fa-brands fa-facebook iconos-footer-icono"></i></a></li>
+        <li class="ms-5"><a class="link-light" href="#"><i class="fa-solid fa-circle-up fa-2x iconos-footer-flecha"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

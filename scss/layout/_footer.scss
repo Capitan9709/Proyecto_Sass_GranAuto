@@ -1,0 +1,30 @@
+/// layout: footer
+.nav{
+    font-family: $font-family-secondary;
+    &-link{
+        color: #adb5bd !important;
+    }
+    .disabled{
+        color: color(quaternary) !important;
+    }
+}
+.iconos-footer{
+    &-icono{
+        color: color(tertiary) !important;
+        scale: 1;
+        transition: 0.3s;
+    }
+    &-icono:hover{
+        color: color(quaternary) !important;
+        scale: 1.5;
+        transition: 0.3s;
+    }
+    &-flecha{
+        color: color(tertiary) !important;
+        transition: 0.3s;
+    }
+    &-flecha:hover{
+        color: color(quaternary) !important;
+        transition: 0.3s;
+    }
+}

@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'mixin';
+@import 'base';
+
+@import 'components/carousel';
+@import 'components/formularioContacto';
+
+@import 'layout/footer';
+@import 'layout/card';
+@import 'layout/detalleCoche';
+@import 'layout/navigation';
+
+@import '../node_modules/bootstrap/scss/bootstrap';
