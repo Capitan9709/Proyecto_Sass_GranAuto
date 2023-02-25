@@ -1,6 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+}
+header,footer{
     font-family: $font-family-secondary;
 }
-
+main{
+    font-family: $font-family-primary;
+}

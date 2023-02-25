@@ -1,0 +1,9 @@
+/// layout: imgNosotros
+.nosotros-imagen{
+    @include flex(row, center, center);
+    width: 20rem;
+    margin-bottom: 3rem;
+    @include responsive(md){
+        width: 19rem;
+    }
+}
